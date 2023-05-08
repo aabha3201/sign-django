@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ChitChat</title>
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+</head>
+<body>
+	<div class="wrapper">
+			<nav class="navbar">
+				<ul>
+					<li><a href="{% url 'home' %}">Home</a></li>
+					<li><a href="{% url 'animation' %}">Audio/Text to Sign Language</a></li>
+					<li><a href="#">Sign Language to Audio/Text</a></li>
+					<!-- <li><a href="login.html">Login</a></li> -->
+				</ul>
+			</nav>
+			<div class="center">
+			<h1>Welcome To ChitChat</h1>
+			<h2>A social interaction app</h2>
+			<div class="buttons">
+			<button>Audio/Text to Sign Language</button>
+			<button class="btn2">Sign Language to Audio/Text</button>
+		</div>
+		</div>
+</body>
+</html>
